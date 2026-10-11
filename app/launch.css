@@ -1,0 +1,67 @@
+/* The opening scene: quiet space, luminous type, and an actionable workspace. */
+.launch-hero {
+  min-height: min(920px, 100svh);
+  background: radial-gradient(ellipse at 76% 47%, #192449 0%, transparent 46%), #080c16;
+}
+.launch-hero:after {
+  top: 19%;
+  right: -18%;
+  width: 65%;
+  border-color: #91b9ff12;
+  box-shadow: 0 0 0 5vw #91b9ff04, 0 0 0 10vw #91b9ff03;
+}
+.launch-starfield { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.launch-hero .antriksh-hero-grid { opacity: .1; background-size: 100px 100px; }
+.launch-hero .antriksh-hero-inner { grid-template-columns: 1.1fr 1fr; gap: 64px; padding-top: 165px; padding-bottom: 135px; }
+.launch-hero .antriksh-hero-copy { min-width: 0; }
+.launch-hero .antriksh-hero-brandline { border: 0; background: none; padding: 0; font-size: 9px; letter-spacing: .1em; color: #b7c4d8; }
+.launch-hero .antriksh-hero-brandline span { border-radius: 50%; }
+.launch-coordinate { margin: 13px 0 20px; font: 500 9px/1.6 var(--digital-mono); letter-spacing: .18em; color: #92a3c0; }
+.launch-hero h1 { font-size: clamp(66px, 7.1vw, 112px); line-height: .96; letter-spacing: -.065em; text-wrap: initial; }
+.launch-hero h1 em { display: block; font-family: Georgia, serif; font-weight: 400; font-style: italic; letter-spacing: -.065em; background-image: linear-gradient(105deg, #e1ffb0, #baffda 65%, #a2e8ff); }
+.launch-hero .antriksh-hero-lead { max-width: 420px; font-size: 16px; line-height: 1.8; color: #adbcd0; margin-top: 28px; }
+.launch-hero .antriksh-hero-actions { gap: 24px; margin-top: 28px; }
+.launch-hero .antriksh-button-gold { background: #d1fca5; color: #0c1712; box-shadow: 0 6px 28px #c9ff6314; border-radius: 8px; }
+.launch-hero .antriksh-button-gold:hover { background: #e1ffbc; box-shadow: 0 8px 35px #c9ff6326; }
+.launch-shortcuts { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 38px; padding-top: 22px; border-top: 1px solid #ffffff1c; }
+.launch-shortcuts a { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; color: #a9b9cc; font-size: 11px; transition: color .2s; }
+.launch-shortcuts a:hover { color: #d1fca5; }
+.launch-shortcuts a>svg:first-child { color: #baffda; }
+.launch-hero .antriksh-studio-board { background: #101a2acc; border-color: #b7d3ff2e; box-shadow: 0 40px 90px #0005, 0 0 65px #748dff0d; }
+.launch-hero .antriksh-studio-growth strong { font-size: 25px; letter-spacing: -.055em; }
+.launch-hero .antriksh-studio-growth small { max-width: 140px; line-height: 1.5; }
+.launch-hero .antriksh-studio-growth>span svg { position: static; width: 15px; height: 15px; fill: none; flex: none; }
+.launch-hero .antriksh-studio-growth>span svg path { stroke: currentColor; stroke-width: 2; filter: none; }
+.launch-hero .antriksh-studio-growth>svg { width: 45%; opacity: .45; }
+.launch-hero .antriksh-studio-footer { grid-template-columns: repeat(3, 1fr); }
+.launch-preview-link { display: inline-flex; align-items: center; gap: 18px; margin-top: 22px; padding: 10px 14px; border-radius: 5px; background: #c9ff63; color: #111725; font-size: 10px; font-weight: 700; }
+.launch-hero .antriksh-capability-rail { background: #0c1322b3; font-size: 10px; letter-spacing: .18em; }
+.antriksh-site section[id] { scroll-margin-top: 85px; }
+.antriksh-service-card:focus-visible { outline-color: #3246e8; }
+.antriksh-marquee-shell:focus-within .antriksh-marquee-track { animation-play-state: paused; }
+@media (max-width: 1100px) {
+  .launch-hero .antriksh-hero-inner { gap: 36px; }
+  .launch-hero h1 { font-size: clamp(62px, 7vw, 90px); }
+  .launch-hero .antriksh-hero-actions { flex-wrap: wrap; gap: 22px; }
+}
+@media (max-width: 900px) {
+  .launch-hero .antriksh-hero-inner { grid-template-columns: 1fr; padding-top: 135px; gap: 50px; }
+  .launch-hero .antriksh-hero-copy { max-width: 650px; }
+  .launch-hero h1 { font-size: clamp(68px, 12vw, 100px); }
+  .launch-hero .antriksh-hero-lead { max-width: 490px; }
+  .launch-hero .antriksh-studio-board { width: 100%; max-width: 600px; margin-inline: auto; }
+}
+@media (max-width: 540px) {
+  .launch-hero .antriksh-hero-inner { padding-top: 112px; padding-bottom: 125px; gap: 40px; }
+  .launch-hero h1 { font-size: clamp(59px, 15.5vw, 82px); }
+  .launch-hero .antriksh-hero-brandline { font-size: 7px; gap: 8px; }
+  .launch-coordinate { font-size: 7px; margin-top: 5px; letter-spacing: .14em; }
+  .launch-hero .antriksh-hero-lead { font-size: 14px; margin-top: 22px; }
+  .launch-shortcuts { gap: 8px 14px; margin-top: 28px; }
+  .launch-shortcuts a { font-size: 10px; gap: 6px; }
+  .launch-hero .antriksh-core-header { padding-inline: 15px; font-size: 7px; }
+  .launch-hero .antriksh-studio-growth strong { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .launch-hero *, .launch-hero *:before, .launch-hero *:after { animation: none !important; transition: none !important; }
+}

@@ -6,7 +6,7 @@ Complete, self-hostable ANTRIKSH digital-agency website and administrator contro
 
 - Responsive ANTRIKSH marketing website with the Hindi “अ” brand mark
 - Animated ANTRIKSH identity pairing the Hindi “अ” mark with a particle-assembled wordmark
-- Cursor-attracted constellation animation on pointer devices, with reduced-motion and mobile fallbacks
+- Perspective 3D starfield moving toward the screen, optimized for mobile, reduced motion, and offscreen pausing
 - Service cards that open the contact form with the chosen service already selected
 - Contact enquiries saved to an online MySQL database
 - Protected administrator login and control centre
